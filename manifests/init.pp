@@ -11,12 +11,12 @@
 #
 # [+repo+]
 #   the +repo+ puppet module is needed to :
-#   
+#
 #   - refresh the repository before installing package (in wget::install)
 #
 ################################################################################
 class wget {
-    include repo
-    
-	include wget::install
+  include repo
+
+  include wget::install
 }
