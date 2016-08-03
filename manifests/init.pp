@@ -16,7 +16,7 @@
 #
 ################################################################################
 class wget {
-  include repo
+  include stdlib
 
-  include wget::install
+  ensure_packages ( 'wget', { 'require' => Class['apt::update'] } )
 }
